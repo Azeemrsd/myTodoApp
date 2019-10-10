@@ -3,14 +3,13 @@
     <h1>My Todo App</h1>
   </div>
   <div class="main-content">
-    <form ngNativeValidate>
+    <form>
       <input
         type="text"
         class="textarea"
         placeholder="Add a Todo"
         (input)="newTodoValue($event)"
         value="{{ newTodo }}"
-        required
       />
       <button
         class="btn btn-primary m-2 addButton"
